@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!-- Styles CSS -->
+<!--        <link rel="stylesheet" href="css/style.css">-->
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+       <style>
+            
+            :root {
+              --yellow: #ffc600;
+              --black: #272727;
+            }
+            
+            .grid {
+                margin-top: 300px;
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 2fr 1fr;
+                grid-template-areas:
+                    "blank button" 
+                    "video chat"
+                    "poll  chat"
+                
+            }
+        
+            /* Each item in our grid will contain numbers */
+            .item {
+              /* We center the contents of these items. You can also do this with flexbox too! */
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              border: 5px solid rgba(0, 0, 0, 0.03);
+              border-radius: 3px;
+              font-size: 35px;
+              background-color: var(--yellow); /* best colour */
+            }
+           .item p {
+              margin: 0 0 5px 0;
+            }
+           
+           
+           .itm{
+               background-color: white;
+           }
+
+            
+           .banner--overlay{
+               margin-top: -300px;
+           }
+            
+        </style>
+       
+        <header>
+            <div class="header--container">
+                <div class="header--logo">
+                    <a href="https://www.kaptest.com/" title="Return to Kaptest.com" class="block"><img src="//kaptest.cdn.prismic.io/kaptest%2Fbf2444d4-bac3-4f9a-918d-31044bba7970_ktp_sta_white_horizontal.png" alt="Kaplan Test Prep" class="logo"></a>
+                </div>
+            </div>
+        </header>
+        
+        
+<!--
+        <div class="container-fluid nopad">
+            <div class="banner"></div>
+        </div>
+-->
+        
+        <div class="container">
+            <div class="grid">
+                <div class="itm item1">1</div>
+                <div class="itm item2">2</div>
+                <div class="itm item3">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_RtV3T00hWk" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <div class="itm item4">4</div>
+                <div class="itm item6">
+                    <iframe width="100%" height="100%" scrolling="no" src="https://app.meetingpulse.net/attendee/actprepathon#polls"></iframe>
+                </div>
+                <div class="itm item6">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://rb1.chatroll.com/embed/chat/pc?id=H6NIUCD967U&platform=html"> </iframe>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+-->
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,290 @@
+html {
+/*    min-height: 100%;*/
+    background-image: url(/img/gradient_bg.png);
+    background-position: center top;
+    padding: 4em 0px;
+    background-repeat: no-repeat;
+    margin: 0;
+/*    background: linear-gradient(75deg,#590e76,#1e0576 17%,#1e0576 72%,#1e509d);*/
+}
+
+body{
+    background: transparent;
+    
+}
+
+a{
+    color: #fff !important;
+    line-height: inherit;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
+header {
+    background: transparent; /*transparent*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .header--container{
+    position: relative;
+    margin: 0 auto;
+    line-height: 60px;
+    
+}
+
+
+header .header--logo {
+    width: 170px;
+    height: 60px;
+    float: left;
+    padding-right: 15px;
+    margin-left: 15px;
+}
+
+header .header--right{
+    float: right;
+}
+
+.login{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 15px;
+    border-top: 0;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+    
+}
+
+.nopad {
+    padding: 0 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.ls-16-9-wrapper {
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+}
+
+.ls-16-9-body {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+/*
+div#ls-vidDiv {
+    -webkit-transition: all 1s; /* Safari
+    transition: all 1s;
+}
+*/
+
+
+.ls-8-18-wrapper {
+	width: 100%;
+	padding-bottom: 225%;
+	position: relative;
+}
+
+
+.ls-8-18-body {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+
+/*
+.ls-video {
+    width: 100%;
+    transition-timing-function: ease-in;
+}
+
+.ls-videoDiv {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+*/
+
+.ls-video-xl {
+    width: 100%;
+}
+
+/*
+.ls-chat {
+    width: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+*/
+
+.ls-chat-xl {
+    width: 100%;
+    }
+
+.ls-poll {
+    width: 100%;
+    }
+
+.ls-bg{
+    background: #30b4e1;
+    min-height: 400px;
+}
+
+.ls-wrapper{
+    position: relative;
+    
+    background-color: white;
+    background-color: #fff;
+    padding: .5em;
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+}
+
+.ls-buttons{
+    position: relative;
+    padding: 0;
+    margin-top: 20px
+}
+
+.ls-btn {
+    background-color: #005de8;
+    color: #fff;
+    border-top-right-radius: .3em;
+    border-top-left-radius: .3em;
+    padding: .2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nomargin{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ########### MEDIA QUERIES ###################*/
+@media only screen and (min-width : 320px) {
+   .ls-8-18-wrapper {
+        width: 100%;
+	    padding-bottom: 56.25%; /* 16:9 */
+	    position: relative;
+    }
+    
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .ls-8-18-wrapper {
+        width: 100%;
+	    padding-bottom: 56.25%; /* 16:9 */
+	    position: relative;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .ls-8-18-wrapper {
+        width: 100%;
+        padding-bottom: 225%; /* 16:9 */
+        position: relative;
+    }
+
+    .ls-chat {
+        position: relative;
+        top: 0px;
+        margin-bottom: -265px;
+    }
+    
+    .ls-chat.xl{
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+        
+    .ls-8-18-wrapper.xl{
+        width: 100%;
+        padding-bottom: 112.5%; /* 8:18 */
+        position: relative;
+    }
+
+}
+
+
+/* Large Devices, Wide Screens */
+    @media only screen and (min-width : 992px) {    
+    
+    .container{
+        max-width: 960px;         
+    }
+
+    .ls-8-18-wrapper {
+        width: 100%;
+        padding-bottom: 225%; /* 16:9 */
+        position: relative;
+    }
+
+    .ls-chat {
+        position: relative;
+        top: 0;
+        margin-bottom: -355px;
+    }
+    
+    .ls-chat.xl{
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+        
+    .ls-8-18-wrapper.xl{
+        width: 100%;
+        padding-bottom: 112.5%; /* 8:18 */
+        position: relative;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1400px) {
+     .container{
+        max-width: 1140px;         
+    }
+
+    .ls-chat {
+        position: relative;
+        top: 0;
+        margin-bottom: -425px;
+    }
+    
+    .ls-chat.xl{
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+        
+    .ls-8-18-wrapper.xl{
+        width: 100%;
+        padding-bottom: 112.5%; /* 8:18 */
+        position: relative;
+    }
+}
+
